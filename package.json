@@ -1,0 +1,15 @@
+{
+  "name": "Nitro-Boost-Gen",
+  "version": "1.0.0",
+  "description": "Generateur de nitro boost 3 mois",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "On Hamza",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^11.6.4",
+    "generate-password": "^1.7.0"
+  }
+}
