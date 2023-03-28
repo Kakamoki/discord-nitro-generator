@@ -27,10 +27,8 @@ client.on("message", (message) => {
 
     if(message.author.bot || !message.guild) return;
 
-      if(!message.content.startsWith(`${config.prefix}nitro`)) return message.author.createDM().then((channel) => channel.send(getFake()));
-      //message.channel.send(getFake());
-      message.author.createDM().then((channel) => channel.send(getFake()));
-      message.channel.send(embed12);
+      if(!message.content.startsWith(`${config.prefix}nitro`)) return message.channel.send(embed12), message.author.createDM().then((channel) => channel.send(getFake()));
+      //message.channel.send(getFake()); (pour envoyer le message dans le salon directement)
 });
 
 client.login(config.token);
